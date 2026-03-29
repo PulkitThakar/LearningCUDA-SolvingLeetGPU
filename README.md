@@ -12,6 +12,17 @@ So, with my recently discovered interests in core programming and the direction 
 
 Now, we all are aware of [Leetcode](https://leetcode.com/) that allows use to practice our skills in DSA. Similar to this, [AlphaGPU](https://github.com/AlphaGPU) has come up with [LeetGPU](https://leetgpu.com/) to practice CUDA / GPU based programming.
 
-## TLDR
+### TLDR
 
 I really enjoy grasping a subject by directly diving into problems - I believe that it is the most effective way to learn something. And I will use LeetGPU as a playground for me to learn this subject. As I do so, I will make notes on how I approached the problems and share it through this repository.
+
+
+## Prerequisite
+
+From what I understand as I am getting started, one should have some basic knowledge of **C/C++** before starting their journey with CUDA Programming.
+
+## Question List
+
+The below list contains the problems that I have solved. I solved them in the same order as I have listed them.
+
+1. [Vector Addition](LeetGPUQuestions/VectorAddition/README.md)
