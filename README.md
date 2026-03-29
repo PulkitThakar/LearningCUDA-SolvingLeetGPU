@@ -25,4 +25,4 @@ From what I understand as I am getting started, one should have some basic knowl
 
 The below list contains the problems that I have solved. I solved them in the same order as I have listed them.
 
-1. [Vector Addition](VectorAddition/README.md)
+1. [Vector Addition](LeetGPUQuestions/VectorAddition/README.md)
