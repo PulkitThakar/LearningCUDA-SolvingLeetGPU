@@ -37,7 +37,7 @@ One way to call a kernel is the **Triple Chevron Notation**.
     ...
 ```
 
-The arguments passed inside the chevrons are `blocks` and `threads` in that order. `blocks` is the number of blocks that execute and `threads` is the number of threads per block. More on Thread and Blocks over [here](https://docs.nvidia.com/cuda/cuda-programming-guide/01-introduction/programming-model.html#thread-blocks-and-grids)
+The arguments passed inside the chevrons are the execution configuration like `blocks` and `threads` in that order. `blocks` is the number of blocks that execute and `threads` is the number of threads per block. More on Thread and Blocks over [here](https://docs.nvidia.com/cuda/cuda-programming-guide/01-introduction/programming-model.html#thread-blocks-and-grids)
 
 > **Rounding up the number of blocks needed**
 > 
@@ -47,11 +47,12 @@ The arguments passed inside the chevrons are `blocks` and `threads` in that orde
 
 ### Thread and Grid Intrinsics
 
-Each kernel has access to some data about the execution configuration and the index of the thread and the block. These are like the following:
+Each kernel has access to intrisics that give information about the execution configuration and the index of the thread and the block. These are like the following:
 
-- `blockIdx` - the index of the block that the thread is in.
 - `threadIdx` - the index of the thread in the block.
 - `blockDim` - the number of threads in a block
+- `blockIdx` - the index of the block that the thread is in.
+- `gridDim` - the number of blocks in the grid
 
 Each of these intrinsics has three member `x`, `y`, and `z`. That is because they can all be three dimension. Multi-dimensional blocks are not used in this example and will come in future problems. More on the above Intrinsics can be found [here](https://docs.nvidia.com/cuda/cuda-programming-guide/02-basics/intro-to-cuda-cpp.html#thread-and-grid-index-intrinsics).
 
@@ -72,11 +73,11 @@ The above code is saying that the thread with index `tid` in the block with inde
 > **Understanding `tid` with an example**
 >
 > Imagine two vectors with 16 elements each. Imagine splitting the vector into 4 blocks. Each block having 4 threads. The first thread in the first block will add the first elements of both the vectors. The second thread in the first block will add the second elements of both the vectors. The first thread in the second block will add the fifth elements of the vectors. And so on.
-```
-A = [a0  a1  a2  a3 | a4  a5  a6  a7 | a8  a9  a10 a11 | a12 a13 a14 a15]
-B = [b0  b1  b2  b3 | b4  b5  b6  b7 | b8  b9  a10 a11 | b12 b13 b14 b15]
-C = [c0  c1  c2  c3 | c4  c5  c6  c7 | c8  c9  c10 c11 | c12 c13 c14 c15]
-```
+> ```
+> A = [a0  a1  a2  a3 | a4  a5  a6  a7 | a8  a9  a10 a11 | a12 a13 a14 a15]
+> B = [b0  b1  b2  b3 | b4  b5  b6  b7 | b8  b9  a10 a11 | b12 b13 b14 b15]
+> C = [c0  c1  c2  c3 | c4  c5  c6  c7 | c8  c9  c10 c11 | c12 c13 c14 c15]
+> ```
 > Block‑by‑block mapping
 > Draw this as four horizontal blocks side by side, each with 4 threads:
 > 
