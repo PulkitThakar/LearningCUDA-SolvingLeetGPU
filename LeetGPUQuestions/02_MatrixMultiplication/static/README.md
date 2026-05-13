@@ -1,0 +1,3 @@
+# Image Credits
+
+1. MatrixMultiplication.jpeg : [YouTube Video by Math Easy Solutions](https://www.youtube.com/watch?v=u6MVJiOw2d4) | [link](https://www.google.com/imgres?q=matrix%20multiplication&imgurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fu6MVJiOw2d4%2Fhq720.jpg%3Fsqp%3D-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD%26rs%3DAOn4CLAp46vk7unDkRg1z5qrv_do4h9Sog&imgrefurl=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Du6MVJiOw2d4&docid=_vj7XM2O_dk08M&tbnid=8phkiWDB82YEtM&vet=12ahUKEwj7g8G40--TAxWgMYYAHYYmNdEQnPAOegQIGhAB..i&w=686&h=386&hcb=2&ved=2ahUKEwj7g8G40--TAxWgMYYAHYYmNdEQnPAOegQIGhAB)
